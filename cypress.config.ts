@@ -9,7 +9,8 @@ export default defineConfig({
     env:{
       stage:"https://stage.pasv.us/course",
       prod:"https://coding.pasv.us/course",
-      test: "https://uitestingplayground.com"
+      test: "https://uitestingplayground.com",
+      demoQA:'https://demoqa.com',
     }
   },
   defaultCommandTimeout:16000
