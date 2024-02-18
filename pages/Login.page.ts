@@ -1,11 +1,4 @@
-class LoginPage {
- 
-    get userName() { return cy.get('#userName').type('test') }
-    get password() { return cy.get('#password').type('Test1234*') }
-    get loginButton() { return cy.get('#login')}
-}
 
-export default new LoginPage()
 
 // # 2
 
@@ -15,7 +8,9 @@ class Login{
     loginButton: string = '#login'
     logOutButton: string = '#submit'
 
-    submitBurronLogin(){
+    submitButtonLogin(){
+        // cy.get(this.userName).type(process.env.EMAIL)
+        // cy.get(this.password).type(process.env.PASSWORD)
         cy.get(this.userName).type('test')
         cy.get(this.password).type('Test1234*')
         cy.get(this.loginButton).click()

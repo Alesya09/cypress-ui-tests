@@ -1,4 +1,5 @@
 import { defineConfig } from "cypress";
+require('dotenv').config()
 
 export default defineConfig({
   e2e: {
@@ -12,7 +13,13 @@ export default defineConfig({
       test: "https://uitestingplayground.com",
       demoQA:'https://demoqa.com',
       herokuapp: 'https://the-internet.herokuapp.com',
-    }
+    },
+    viewportHeight:1400,
+    viewportWidth:1200,
+  },
+  retries:{
+    runMode: 2,
+    openMode: 2,
   },
   defaultCommandTimeout:16000
 });

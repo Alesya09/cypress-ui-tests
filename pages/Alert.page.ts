@@ -45,10 +45,8 @@ class Alert{
         cy.stub($win, 'prompt').returns('This is a test text!') // I am waiting for
         cy.contains('Click for JS Prompt').click()   
     })
-    cy.get(this.resultSelector).should('have.text', 'You entered: This is a test text!')
+    cy.get('#result').should('have.text', 'You entered: This is a test text!')
     }
-
 }
-
 
 export const AlertPage = new Alert()

@@ -5,7 +5,7 @@ describe('Cookies', () => {
     beforeEach(()=>{
         cy.session('myCurrentSession',()=>{
            cy.visit(`${Cypress.env('demoQA')}/login`) 
-             LoginPages.submitBurronLogin()
+             LoginPages.submitButtonLogin()
         })   
     })
     // no cookies created
