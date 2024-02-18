@@ -11,6 +11,7 @@ export default defineConfig({
       prod:"https://coding.pasv.us/course",
       test: "https://uitestingplayground.com",
       demoQA:'https://demoqa.com',
+      herokuapp: 'https://the-internet.herokuapp.com',
     }
   },
   defaultCommandTimeout:16000
