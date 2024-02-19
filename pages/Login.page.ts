@@ -1,7 +1,4 @@
 
-
-// # 2
-
 class Login{
     userName: string = '#userName'
     password: string = '#password'

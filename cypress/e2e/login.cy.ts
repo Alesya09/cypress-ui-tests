@@ -1,4 +1,4 @@
-import LoginPage from "../../pages/Login.page"
+import { LoginPages } from "../../pages/Login.page"
 
 describe('Login Page', () => {
 
@@ -7,10 +7,7 @@ describe('Login Page', () => {
     })
     it('login', () => { 
         
-        LoginPage.userName
-        LoginPage.password
-        LoginPage.loginButton.click()
-        cy.get('#submit').contains('Log out').should('be.visible')
+        LoginPages.submitButtonLogin()
         
     });
 });
